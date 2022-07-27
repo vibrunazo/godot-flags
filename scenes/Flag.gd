@@ -1,19 +1,28 @@
-extends Node2D
+tool
+
+extends Control
 
 class_name Flag, "res://tex/brazil.png"
 
-export var country = "brazil" setget set_country
+export var country = "brazil" #setget set_country
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	update_tex()
-	pass # Replace with function body.
 
+func _process(delta):
+	if Engine.editor_hint:
+		# Code to execute in editor.
+#		print("flag in editor, country is {country}".format({"country": country}))
+		if country == "brazil":
+			$Img.texture = load("res://tex/brazil.png")
+		if country == "japan":
+			$Img.texture = load("res://tex/japan.png")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	if not Engine.editor_hint:
+		# Code to execute in game.
+		pass
 
 func update_tex():
 	self.country = "germany"
