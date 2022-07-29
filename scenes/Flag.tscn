@@ -4,9 +4,12 @@
 [ext_resource path="res://scenes/Flag.gd" type="Script" id=2]
 
 [node name="Flag" type="Control"]
+margin_right = 200.0
+margin_bottom = 200.0
 script = ExtResource( 2 )
 
 [node name="Img" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 1 )
+expand = true
