@@ -6,10 +6,36 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="Flag" parent="." instance=ExtResource( 1 )]
-country = "germany"
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 216.0
+margin_top = 51.0
+margin_right = 748.0
+margin_bottom = 567.0
+columns = 2
 
-[node name="Flag2" parent="." instance=ExtResource( 1 )]
-margin_left = 489.0
-margin_right = 689.0
+[node name="Flag" parent="GridContainer" instance=ExtResource( 1 )]
+margin_right = 240.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 240, 240 )
+
+[node name="Flag2" parent="GridContainer" instance=ExtResource( 1 )]
+margin_left = 244.0
+margin_right = 484.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 240, 240 )
 country = "canada"
+
+[node name="Flag4" parent="GridContainer" instance=ExtResource( 1 )]
+margin_top = 244.0
+margin_right = 240.0
+margin_bottom = 484.0
+rect_min_size = Vector2( 240, 240 )
+country = "japan"
+
+[node name="Flag3" parent="GridContainer" instance=ExtResource( 1 )]
+margin_left = 244.0
+margin_top = 244.0
+margin_right = 484.0
+margin_bottom = 484.0
+rect_min_size = Vector2( 240, 240 )
+country = "germany"
