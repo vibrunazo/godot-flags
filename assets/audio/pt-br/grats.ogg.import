@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/grats.ogg-22ed998939b688f8c566fbd32604c0e6.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/pt-br/grats.ogg"
+dest_files=[ "res://.import/grats.ogg-22ed998939b688f8c566fbd32604c0e6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

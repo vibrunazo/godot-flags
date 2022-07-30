@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/germany.ogg-1d7f797fae26c08d84890ecadac80719.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/pt-br/germany.ogg"
+dest_files=[ "res://.import/germany.ogg-1d7f797fae26c08d84890ecadac80719.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

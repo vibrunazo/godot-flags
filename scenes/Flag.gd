@@ -26,5 +26,5 @@ func _on_Flag_gui_input(event):
 
 
 func _on_ToolButton_pressed():
-	print("pressed button on %s flag" % country)
-	pass # Replace with function body.
+	var quiz = get_tree().root.get_node("QuizGame")
+	quiz._on_flag_clicked(self)
