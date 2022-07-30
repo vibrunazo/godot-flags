@@ -1,10 +1,21 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/Flag.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/fonts/Merienda-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+outline_size = 2
+outline_color = Color( 0.0901961, 0.00392157, 0.00392157, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 1 )
 
 [node name="QuizGame" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+theme = SubResource( 2 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 anchor_top = 0.5
@@ -13,32 +24,58 @@ anchor_bottom = 0.5
 margin_top = -362.0
 margin_bottom = 362.0
 
-[node name="GridContainer" type="GridContainer" parent="CenterContainer"]
-margin_left = 150.0
-margin_right = 874.0
-margin_bottom = 724.0
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 136.0
+margin_right = 888.0
+margin_bottom = 966.0
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_right = 752.0
+margin_bottom = 238.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer"]
+margin_right = 752.0
+margin_bottom = 238.0
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer"]
+margin_right = 752.0
+margin_bottom = 117.0
+text = "Qual é a bandeira?"
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer"]
+margin_top = 121.0
+margin_right = 752.0
+margin_bottom = 238.0
+custom_colors/font_color = Color( 0.666667, 0.819608, 0.0313726, 1 )
+text = "Brasil"
+align = 1
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer/VBoxContainer"]
+margin_top = 242.0
+margin_right = 752.0
+margin_bottom = 966.0
 columns = 2
 
-[node name="Flag" parent="CenterContainer/GridContainer" instance=ExtResource( 1 )]
+[node name="Flag" parent="CenterContainer/VBoxContainer/GridContainer" instance=ExtResource( 1 )]
 margin_right = 360.0
 margin_bottom = 360.0
 rect_min_size = Vector2( 360, 360 )
 
-[node name="Flag2" parent="CenterContainer/GridContainer" instance=ExtResource( 1 )]
+[node name="Flag2" parent="CenterContainer/VBoxContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 364.0
 margin_right = 724.0
 margin_bottom = 360.0
 rect_min_size = Vector2( 360, 360 )
 country = "canada"
 
-[node name="Flag4" parent="CenterContainer/GridContainer" instance=ExtResource( 1 )]
+[node name="Flag4" parent="CenterContainer/VBoxContainer/GridContainer" instance=ExtResource( 1 )]
 margin_top = 364.0
 margin_right = 360.0
 margin_bottom = 724.0
 rect_min_size = Vector2( 360, 360 )
 country = "japan"
 
-[node name="Flag3" parent="CenterContainer/GridContainer" instance=ExtResource( 1 )]
+[node name="Flag3" parent="CenterContainer/VBoxContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 364.0
 margin_top = 364.0
 margin_right = 724.0
