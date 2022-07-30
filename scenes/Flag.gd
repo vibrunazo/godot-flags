@@ -19,3 +19,12 @@ func update_tex():
 	if Global.flags.has(country):
 		var path = "res://assets/tex/%s.png" % country
 		$Img.texture = load(path)
+
+
+func _on_Flag_gui_input(event):
+	pass # Replace with function body.
+
+
+func _on_ToolButton_pressed():
+	print("pressed button on %s flag" % country)
+	pass # Replace with function body.

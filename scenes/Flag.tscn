@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/tex/brazil.png" type="Texture" id=1]
 [ext_resource path="res://scenes/Flag.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=1]
 
 [node name="Flag" type="Control"]
 margin_right = 200.0
@@ -13,3 +15,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 1 )
 expand = true
+
+[node name="ToolButton" type="ToolButton" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/focus = SubResource( 1 )
+
+[connection signal="gui_input" from="." to="." method="_on_Flag_gui_input"]
+[connection signal="pressed" from="ToolButton" to="." method="_on_ToolButton_pressed"]
