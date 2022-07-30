@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scenes/Flag.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/fonts/Merienda-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://scenes/QuizGame.gd" type="Script" id=3]
 [ext_resource path="res://assets/audio/pt-br/ask.ogg" type="AudioStream" id=4]
 [ext_resource path="res://assets/audio/pt-br/brazil.ogg" type="AudioStream" id=5]
+[ext_resource path="res://assets/audio/pt-br/yes.ogg" type="AudioStream" id=6]
+[ext_resource path="res://assets/audio/pt-br/no.ogg" type="AudioStream" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
@@ -41,12 +43,12 @@ margin_bottom = 238.0
 margin_right = 752.0
 margin_bottom = 238.0
 
-[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer"]
+[node name="LabelAsk" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer"]
 margin_right = 752.0
 margin_bottom = 117.0
 text = "Qual é a bandeira?"
 
-[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer"]
+[node name="LabelFlagName" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/VBoxContainer"]
 margin_top = 121.0
 margin_right = 752.0
 margin_bottom = 238.0
@@ -96,6 +98,12 @@ stream = ExtResource( 4 )
 
 [node name="AudioFlag" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+
+[node name="AudioYes" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="AudioNo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
 
 [connection signal="timeout" from="StartTimer" to="." method="_on_StartTimer_timeout"]
 [connection signal="finished" from="AudioAsk" to="." method="_on_AudioAsk_finished"]

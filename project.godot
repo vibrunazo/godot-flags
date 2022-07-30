@@ -13,9 +13,15 @@ _global_script_classes=[ {
 "class": "Flag",
 "language": "GDScript",
 "path": "res://scenes/Flag.gd"
+}, {
+"base": "Control",
+"class": "QuizGame",
+"language": "GDScript",
+"path": "res://scenes/QuizGame.gd"
 } ]
 _global_script_class_icons={
-"Flag": "res://assets/tex/brazil.png"
+"Flag": "res://assets/tex/brazil.png",
+"QuizGame": ""
 }
 
 [application]
