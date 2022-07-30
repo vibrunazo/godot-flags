@@ -91,7 +91,6 @@ country = "germany"
 
 [node name="StartTimer" type="Timer" parent="."]
 one_shot = true
-autostart = true
 
 [node name="AudioAsk" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
@@ -107,3 +106,4 @@ stream = ExtResource( 7 )
 
 [connection signal="timeout" from="StartTimer" to="." method="_on_StartTimer_timeout"]
 [connection signal="finished" from="AudioAsk" to="." method="_on_AudioAsk_finished"]
+[connection signal="finished" from="AudioYes" to="." method="_on_AudioYes_finished"]

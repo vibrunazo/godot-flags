@@ -7,6 +7,7 @@ class_name QuizGame
 # var b = "text"
 
 export var country = 'brazil'
+export var options = ['brazil', 'canada', 'japan', 'argentina']
 
 var el_name: Label
 var rng = RandomNumberGenerator.new()
@@ -27,10 +28,11 @@ func new_game():
 	country = pick_random_flag()
 	el_name.text = Global.flags[country].name
 	$AudioFlag.stream = load("res://assets/audio/pt-br/%s.ogg" % country)
+	$StartTimer.start()
 
 func pick_random_flag():
 	var flag_names = Global.flags.keys()
-	return flag_names[rng.randf_range(0, 3)]
+	return flag_names[rng.randi_range(0, 3)]
 
 # called by the flag, 
 # who will look for a node called "QuizGame" on root when it's clicked
@@ -52,3 +54,7 @@ func _on_StartTimer_timeout():
 func _on_AudioAsk_finished():
 	print('ask audio over')
 	$AudioFlag.play()
+
+
+func _on_AudioYes_finished():
+	new_game()
