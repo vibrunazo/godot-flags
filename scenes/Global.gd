@@ -3,10 +3,15 @@ tool
 extends Node
 
 var flags: Dictionary = {
+	"argentina": {"name": "Argentina"},
+	"belgium": {"name": "Bélgica"},
 	"brazil": {"name": "Brasil"},
 	"canada": {"name": "Canada"},
+	"france": {"name": "França"},
 	"germany": {"name": "Alemanha"},
-	"japan": {"name": "Japão"}
+	"italy": {"name": "Itália"},
+	"japan": {"name": "Japão"},
+	"southkorea": {"name": "Coréia do Sul"}
 }
 
 # Called when the node enters the scene tree for the first time.

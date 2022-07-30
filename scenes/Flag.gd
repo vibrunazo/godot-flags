@@ -20,6 +20,10 @@ func update_tex():
 		var path = "res://assets/tex/%s.png" % country
 		$Img.texture = load(path)
 
+func update_country(new_country):
+	country = new_country
+	update_tex()
+
 
 func _on_Flag_gui_input(event):
 	pass # Replace with function body.

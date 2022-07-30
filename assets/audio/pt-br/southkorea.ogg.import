@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/southkorea.ogg-4231882a16c54f7c1d3b04056549a106.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/pt-br/southkorea.ogg"
+dest_files=[ "res://.import/southkorea.ogg-4231882a16c54f7c1d3b04056549a106.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

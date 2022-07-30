@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/belgium.ogg-be1963a7d1e1f1e636607515f7854634.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/pt-br/belgium.ogg"
+dest_files=[ "res://.import/belgium.ogg-be1963a7d1e1f1e636607515f7854634.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

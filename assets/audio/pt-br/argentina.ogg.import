@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/argentina.ogg-34b990fdaa9c9070d034fd2a917be367.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/pt-br/argentina.ogg"
+dest_files=[ "res://.import/argentina.ogg-34b990fdaa9c9070d034fd2a917be367.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

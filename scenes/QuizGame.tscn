@@ -67,14 +67,14 @@ margin_right = 360.0
 margin_bottom = 360.0
 rect_min_size = Vector2( 360, 360 )
 
-[node name="Flag2" parent="CenterContainer/VBoxContainer/GridContainer" instance=ExtResource( 1 )]
+[node name="Flag1" parent="CenterContainer/VBoxContainer/GridContainer" instance=ExtResource( 1 )]
 margin_left = 364.0
 margin_right = 724.0
 margin_bottom = 360.0
 rect_min_size = Vector2( 360, 360 )
 country = "canada"
 
-[node name="Flag4" parent="CenterContainer/VBoxContainer/GridContainer" instance=ExtResource( 1 )]
+[node name="Flag2" parent="CenterContainer/VBoxContainer/GridContainer" instance=ExtResource( 1 )]
 margin_top = 364.0
 margin_right = 360.0
 margin_bottom = 724.0
