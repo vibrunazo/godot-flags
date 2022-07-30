@@ -9,6 +9,7 @@ class_name QuizGame
 export var country = 'brazil'
 
 var el_name: Label
+var rng = RandomNumberGenerator.new()
 
 
 # Called when the node enters the scene tree for the first time.
@@ -22,9 +23,14 @@ func _ready():
 #	pass
 
 func new_game():
-	country = 'germany'
-	el_name.text = country
-	$AudioFlag.stream = load("res://assets/audio/pt-br/germany.ogg")
+	rng.randomize()
+	country = pick_random_flag()
+	el_name.text = Global.flags[country].name
+	$AudioFlag.stream = load("res://assets/audio/pt-br/%s.ogg" % country)
+
+func pick_random_flag():
+	var flag_names = Global.flags.keys()
+	return flag_names[rng.randf_range(0, 3)]
 
 # called by the flag, 
 # who will look for a node called "QuizGame" on root when it's clicked

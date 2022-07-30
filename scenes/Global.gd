@@ -2,11 +2,11 @@ tool
 
 extends Node
 
-var flags = {
-	"brazil": {},
-	"canada": {},
-	"germany": {},
-	"japan": {}
+var flags: Dictionary = {
+	"brazil": {"name": "Brasil"},
+	"canada": {"name": "Canada"},
+	"germany": {"name": "Alemanha"},
+	"japan": {"name": "Japão"}
 }
 
 # Called when the node enters the scene tree for the first time.
