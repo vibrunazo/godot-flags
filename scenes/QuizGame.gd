@@ -13,6 +13,7 @@ var el_name: Label
 var el_flags: Array = options
 var rng = RandomNumberGenerator.new()
 var picked = 'brazil'
+var state = 'paused'
 
 
 # Called when the node enters the scene tree for the first time.
@@ -30,6 +31,7 @@ func _ready():
 #	pass
 
 func new_game():
+	state = 'paused'
 	rng.randomize()
 	options = []
 	var flag_names = Global.flags.keys()
@@ -60,7 +62,7 @@ func pick_random_from(array: Array):
 # who will look for a node called "QuizGame" on root when it's clicked
 func _on_flag_clicked(flag: Flag):
 	print("a flag was clicked with %s " % flag.country)
-	if is_audio_playing():
+	if is_audio_playing() or state != 'ready':
 		print("but audio is playing")
 		return
 	picked = flag.country
@@ -87,6 +89,8 @@ func _on_StartTimer_timeout():
 func _on_AudioAsk_finished():
 	print('ask audio over')
 	$AudioFlag.play()
+	yield($AudioFlag, "finished")
+	state = 'ready'
 
 
 func _on_AudioYes_finished():
