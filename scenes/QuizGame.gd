@@ -60,6 +60,9 @@ func pick_random_from(array: Array):
 # who will look for a node called "QuizGame" on root when it's clicked
 func _on_flag_clicked(flag: Flag):
 	print("a flag was clicked with %s " % flag.country)
+	if is_audio_playing():
+		print("but audio is playing")
+		return
 	picked = flag.country
 	if (country == flag.country):
 		print('correct flag')
@@ -68,6 +71,13 @@ func _on_flag_clicked(flag: Flag):
 		print('wrong flag')
 		$AudioNo.play()
 
+func is_audio_playing():
+	if $AudioAsk.playing: return true
+	if $AudioFlag.playing: return true
+	if $AudioIsNot.playing: return true
+	if $AudioYes.playing: return true
+	if $AudioNo.playing: return true
+	return false
 
 func _on_StartTimer_timeout():
 	print('start timeout')
