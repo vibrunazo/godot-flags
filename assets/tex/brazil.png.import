@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/japan.png-c5a84be1e2bf8ae4ce538d7008c7b115.stex"
+path="res://.import/brazil.png-08d6b083f12b037f05062ced795a97a2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tex/japan.png"
-dest_files=[ "res://.import/japan.png-c5a84be1e2bf8ae4ce538d7008c7b115.stex" ]
+source_file="res://assets/tex/brazil.png"
+dest_files=[ "res://.import/brazil.png-08d6b083f12b037f05062ced795a97a2.stex" ]
 
 [params]
 

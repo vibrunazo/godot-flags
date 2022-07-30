@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/belgium.png-f173dc1432d875a6bb47cada85b6e161.stex"
+path="res://.import/germany.png-59d0291ef23eba9d31e0aaf1fe654c3b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tex/belgium.png"
-dest_files=[ "res://.import/belgium.png-f173dc1432d875a6bb47cada85b6e161.stex" ]
+source_file="res://assets/tex/germany.png"
+dest_files=[ "res://.import/germany.png-59d0291ef23eba9d31e0aaf1fe654c3b.stex" ]
 
 [params]
 

@@ -15,14 +15,14 @@ _global_script_classes=[ {
 "path": "res://scenes/Flag.gd"
 } ]
 _global_script_class_icons={
-"Flag": "res://tex/brazil.png"
+"Flag": "res://assets/tex/brazil.png"
 }
 
 [application]
 
 config/name="Flags"
 run/main_scene="res://scenes/QuizGame.tscn"
-config/icon="res://icon.png"
+config/icon="res://assets/tex/brazil.png"
 
 [autoload]
 

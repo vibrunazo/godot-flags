@@ -2,7 +2,7 @@ tool
 
 extends Control
 
-class_name Flag, "res://tex/brazil.png"
+class_name Flag, "res://assets/tex/brazil.png"
 
 export var country = "brazil" #setget set_country
 
@@ -17,5 +17,5 @@ func _process(delta):
 
 func update_tex():
 	if Global.flags.has(country):
-		var path = "res://tex/%s.png" % country
+		var path = "res://assets/tex/%s.png" % country
 		$Img.texture = load(path)

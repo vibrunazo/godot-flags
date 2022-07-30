@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/argentina.png-726e1834569cc7c9126a4fa27921f078.stex"
+path="res://.import/southkorea.png-f8db337a73eaa4af3f465bbad43ae8ad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tex/argentina.png"
-dest_files=[ "res://.import/argentina.png-726e1834569cc7c9126a4fa27921f078.stex" ]
+source_file="res://assets/tex/southkorea.png"
+dest_files=[ "res://.import/southkorea.png-f8db337a73eaa4af3f465bbad43ae8ad.stex" ]
 
 [params]
 
