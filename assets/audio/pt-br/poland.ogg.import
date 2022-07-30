@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/poland.ogg-b468bb3d07b94cb36a96059bbdfdc299.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/pt-br/poland.ogg"
+dest_files=[ "res://.import/poland.ogg-b468bb3d07b94cb36a96059bbdfdc299.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

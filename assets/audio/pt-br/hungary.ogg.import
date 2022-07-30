@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/hungary.ogg-c24ced589d1d9d6f076edc80c739e4cd.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/pt-br/hungary.ogg"
+dest_files=[ "res://.import/hungary.ogg-c24ced589d1d9d6f076edc80c739e4cd.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

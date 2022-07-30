@@ -9,8 +9,12 @@ var flags: Dictionary = {
 	"canada": {"name": "Canada"},
 	"france": {"name": "França"},
 	"germany": {"name": "Alemanha"},
+	"hungary": {"name": "Hungria"},
+	"israel": {"name": "Israel"},
 	"italy": {"name": "Itália"},
 	"japan": {"name": "Japão"},
+	"lebanon": {"name": "Líbano"},
+	"poland": {"name": "Polônia"},
 	"southkorea": {"name": "Coréia do Sul"}
 }
 
